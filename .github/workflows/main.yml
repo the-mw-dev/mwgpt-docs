@@ -6,9 +6,15 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@master
-    - name: Update node
+    - name: Download NVM
       run: curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.0/install.sh | bash
-    - name: Update node st two
+    - name: Set up nvm step 1
+      run: export NVM_DIR="$HOME/.nvm"
+    - name: Set up nvm step 2
+      run: '[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"'
+    - name: Set up nvm step 3
+      run: '[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"'
+    - name: Update NodeJS
       run: nvm install 22
     - name: Install
       uses: CultureHQ/actions-yarn@master
