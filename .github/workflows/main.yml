@@ -8,7 +8,7 @@ jobs:
     - uses: actions/checkout@master
     - name: Update node
       run: curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.0/install.sh | bash
-    - name: Update node: step 2
+    - name: Update node st two
       run: nvm install 22
     - name: Install
       uses: CultureHQ/actions-yarn@master
