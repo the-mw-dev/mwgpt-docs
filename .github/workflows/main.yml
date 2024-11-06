@@ -3,9 +3,8 @@ name: Main
 jobs:
   lint-and-test:
     name: Build
-    runs-on: ubuntu-latest
+    runs-on: node:22-alpine
     steps:
-    - uses: hongaar/update-node-versions@v2
     - uses: actions/checkout@master
     - name: Install
       uses: CultureHQ/actions-yarn@master
