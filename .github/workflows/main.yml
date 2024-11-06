@@ -6,6 +6,10 @@ jobs:
     runs-on: node:22-alpine
     steps:
     - uses: actions/checkout@master
+    - name: Update node
+      run: curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.0/install.sh | bash
+    - name: Update node: step 2
+      run: nvm install 22
     - name: Install
       uses: CultureHQ/actions-yarn@master
       with:
