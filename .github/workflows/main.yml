@@ -3,7 +3,7 @@ name: Main
 jobs:
   lint-and-test:
     name: Build
-    runs-on: node:22-alpine
+    runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@master
     - name: Update node
