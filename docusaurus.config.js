@@ -8,20 +8,20 @@ import {themes as prismThemes} from 'prism-react-renderer';
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'Документация IP6.lat',
-  tagline: 'Расскажем и покажем как сделать на IP6.lat',
-  favicon: 'https://pimik.xyz/ip6.lat.png',
+  title: 'Документация MWGPT',
+  tagline: 'Туториал по работе с API',
+  favicon: 'https://cdn.mwnodes.xyz/files/856VS6.png',
 
   // Set the production url of your site here
-  url: 'https://docs.ip6.lat',
+  url: 'https://docs.mwgpt.pro',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: '/',
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'ip6lat', // Usually your GitHub org/user name.
-  projectName: 'docs', // Usually your repo name.
+  organizationName: 'mwservices', // Usually your GitHub org/user name.
+  projectName: 'mwgpt-docs', // Usually your repo name.
 
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
@@ -44,7 +44,7 @@ const config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/ip6lat/docs/edit/main/',
+            'https://github.com/mwservices/mwgpt-docs/edit/main/',
         },
         theme: {
           customCss: './src/css/custom.css',
@@ -62,12 +62,12 @@ colorMode: {
       respectPrefersColorScheme: false, // Использовать системные настройки пользователя
     },
       // Replace with your project's social card
-      image: 'https://pimik.xyz/ip6.lat.png',
+      image: 'https://cdn.mwnodes.xyz/files/856VS6.png',
       navbar: {
-        title: 'Документация IP6.lat',
+        title: 'Документация MWGPT',
         logo: {
-          alt: 'IP6.lat',
-          src: 'https://pimik.xyz/ip6.lat.png',
+          alt: 'MWNODES',
+          src: 'https://cdn.mwnodes.xyz/files/856VS6.png',
         },
         items: [
           {
@@ -76,18 +76,14 @@ colorMode: {
             position: 'left',
             label: 'Документация',
           },
-          {
-            href: 'https://github.com/ip6lat/docs',
-            label: 'GitHub',
-            position: 'right',
-          },
+         
         ],
       },
       footer: {
         style: 'dark',
         links: [
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} IP6.lat`,
+        copyright: `Copyright © ${new Date().getFullYear()} MWGPT`,
       },
       prism: {
         theme: prismThemes.github,
